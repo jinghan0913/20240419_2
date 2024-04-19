@@ -1,0 +1,109 @@
+*{
+    /* border: solid 2px black; */
+    font-family: 微軟正黑體;
+    font-size: 20px;
+ }
+html,body{
+    background-color: #ff7526;
+    display: flex;
+    /* 左右 */
+    justify-content: center;
+    /* 上下 */
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    margin: 0px;
+ }
+.box{
+    width: 380px;
+    background-color: #fff;
+    /* 以下指令產生陰影，x位移，y位移，陰影的範圍 */
+    box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.8);
+    transition: 0.5s; 
+}
+ /* hover為滑鼠滑入時，產生的格式 */
+.box:hover{
+    box-shadow: 5px 5px 60px rgba(0, 0, 0, 1);
+    transform: translate(-5px,-5px);
+}
+.top{
+    height:330px;
+    background-image:url(https://pic.pimg.tw/sidney6811/1529508979-1559019819_n.jpg);
+    background-size: cover;
+    position: relative;/*以top的為座標點，找出相對位置*/
+  }
+.top .name{
+    color: #fff;/*字的顏色*/
+    font-size: 24px;/*字的大小*/
+    letter-spacing: 2px; /*字距*/
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    margin: 0px;
+    /* background-color: rgba(0,0,0,0.5); */
+    background: linear-gradient(transparent 0%,black 100%);
+    width: 100%;
+    padding-top: 30px;/*框線變大*/
+  }
+  .top .name .smallText{
+    font-size: 14px;
+  }
+  .cirbutton{
+    width: 50px;
+    height: 50px;
+    background-color: #ff7526;
+    position: absolute; /*設定cirbutton的絕對位置*/
+    right: 30px;/*cirbutton右邊的邊距離box右邊的距離值*/
+    bottom: -20px;
+    border-radius: 25px; /*設定寬高一半的圓弧，就會變成一個圓*/
+  }
+  .tag{
+    width: 30px;
+    height: 80px;
+    background-color: #ff7526;
+    position: absolute;
+    right: 20px;
+    top: 0px;
+  }
+  .bottom{
+    padding: 10px 20px 20px 20px ;/*上，右，下，左的內距*/
+  }
+  .bottom li{
+    padding: 5px 0px;/*上下，左右的內距*/
+  }
+  .bottom h3{
+    display: inline-block;
+  }
+  .bottom ul{
+    list-style: none;/*取消list左邊每個項目的圓圈*/
+    padding-left: 0px;/*左邊內距設定為0*/
+  }
+  .bottom .btn{
+    display: inline-block;
+    letter-spacing: 2px;
+    padding: 10px 25px;
+    border: solid 2px black;
+  }
+  .btnNews{
+    float: right;/*float為浮動位置，設定靠右*/
+    background-color: #fff;
+    transition: 0.5s;
+  }
+  .btnNews:hover{
+    background-color: #6e6767;
+  }
+  .bottons{
+    margin-top: 30px;
+  }
+  .btnWebsite{
+    background-color: #ff7526;
+    transition: 0.5s;
+  }
+  .btnWebsite:hover{
+    background-color: #e6a985;
+  }
+  a{
+    color: initial;
+    text-decoration: initial;
+  }
