@@ -1,0 +1,52 @@
+* {
+    font-family: 微軟正黑體;
+    font-size: 20px;
+}
+html,body{
+    background-color: white;
+    display: flex;
+    /* 左右 */
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+    padding: 10px;
+ }
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border: none;
+}
+.button-container {
+    display: block;
+}
+.menu ul {
+    list-style-type: none;/* 消除按鈕排序列點 */
+}
+/* 連結按鈕 */
+a {
+    color: red;
+    display: block; /* 垂直排列 */
+    width: 150px;
+    height: 30px;
+    padding: 10px 20px;
+    margin: 30px ;
+    text-decoration: none;
+    background-color: #f0f0f0;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+    margin-left: auto; /* 在左側添加自動外邊距，使其在頁面中右移 */
+    border: 2px solid black; /* 按鈕邊框 */
+}
+/* 網頁上方長方形裝飾 */
+.rectangle {
+    width: 70%;/* 寬度設定為80% */
+    height: 20px; /* 設置高度為20px */
+    background-color: yellow; /* 背景顏色為黃色 */
+    position: fixed; /* 固定位置 */
+    top: 0; /* 距離頁面頂端0 */
+    right: 140px; 
+}
+
